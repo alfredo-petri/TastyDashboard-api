@@ -1,35 +1,59 @@
-# 🍕 pizza.shop API
+# Tasty Dashboard API 
 
-Food delivery app (aka. iFood/Uber Eats) back-end built with TypeScript, Drizzle a ElysiaJS.
+A backend API for a food delivery platform, integrated with a custom React frontend. 
 
-> 🔥 This project aims to keep runtime agnostic, this means it should work on Bun, Node, Cloudflare Workers or any Web Standard API compatible runtime.
+The main goal is to use this existing API and integrate it with a frontend project developed by me using React.
 
-## Running
+---
 
-This project depends on Docker to setup database. With Docker installed, clone the project, install  dependencies, setup Docker containers and run the application.
+## ℹ️ About the Project
 
-> You must also run migrations to create database tables and run the seed to populate the database with fake data.
+Backend application for a food delivery system (similar to iFood/Uber Eats), with support for:
 
-```sh
+- Restaurant and customer registration
+- Ratings and metrics
+- Opening/closing restaurant status
+
+---
+
+## Technologies Used
+
+- Bun
+- ElysiaJS
+- Drizzle ORM
+- Docker
+- TypeScript
+
+---
+
+## Running the Project
+
+This project depends on Docker to set up the database.  
+With Docker installed, clone the repository, install the dependencies, start the Docker containers, and run the application.
+
+> You must also run the database migrations to create the tables, and execute the seed command to populate it with fake data.
+
+```bash
 bun i
 docker compose up -d
 bun migrate
 bun seed
 bun dev
 ```
+---
 
-## Features
+## Frontend Integration
+This API will be connected to a React frontend that I’m developing.
 
-> The **summary** of the features are listed below. All the features contains E2E tests.
+→ Link to the frontend repository: [TastyDashboard](https://github.com/alfredo-petri/TastyDashboard)
 
-- it should be able to register a new restaurant
-- it should be able to sign in as a restaurant manager
-- it should be able to register as a new customer
-- it should be able to crete an order to the restaurant
-- it should be able to manage the restaurant menu
-- it should be able to manage the restaurant evaluations
-- it should be able to leave an evaluation
-- it should be able to manage the restaurant orders
-- it should be able to update the restaurant public profile
-- it should be able to open/close the restaurant
-- it should be able to list metrics from the restaurant
+
+---
+
+## Credits
+
+This repository **is not my original work**. It was cloned purely for educational and demonstrational purposes.
+
+All rights for the original code belong to the respective creators.
+
+Original project by: [Rocketseat](https://github.com/rocketseat-education/pizzashop-api#).
